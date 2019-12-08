@@ -260,7 +260,6 @@ class ReneSmartSearch extends Component {
     updateString = () => {
         if (this.state.counter < 1) {
             this.findAmbiguousWordsInString()
-
         } else {
             let arrayOfAmbiguiousWords = ["hdfc equity", "arbitrage", "debt"];
             let lastNode = document.querySelectorAll('.highlight_ambiguity')[this.state.counter-1];
