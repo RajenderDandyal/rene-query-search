@@ -56,7 +56,7 @@ class App extends React.Component {
     })
   }
   loadData = (value) =>{
-      axios.get(`https://api.gulaq.com/funds/search/${value}`)
+      axios.get(`https://yourApi.com/${value}`)
       .then(res =>{
         console.log(res)
         this.setState({res: res.data})
