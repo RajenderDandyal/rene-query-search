@@ -8,7 +8,6 @@ import Input from '@material-ui/core/Input';
 import axios from "axios";
 import isEmpty from "lodash/isEmpty";
 import {withStyles} from "@material-ui/core"
-import {withRouter} from "react-router-dom";
 
 
 const styles = theme => ({
@@ -56,7 +55,7 @@ class App extends React.Component {
     })
   }
   loadData = (value) =>{
-      axios.get(`https://yourApi.com/${value}`)
+      axios.get(`https://api.gulaq.com/funds/search/${value}`)
       .then(res =>{
         console.log(res)
         this.setState({res: res.data})
